@@ -26,7 +26,7 @@ async def channel_post(client: Client, message: Message):
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
 
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Our Group 🎈", url=f'https://t.me/+T4yw4xMsdd83ODM1')]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Share PrimeFlix ✨", url=f'https://t.me/share/url?url=t.me/PrimeFlix_Movies1')]])
 
     await reply_text.edit(f"<b>Here is your link</b>\n\n{link}", reply_markup=reply_markup, disable_web_page_preview = True)
 
