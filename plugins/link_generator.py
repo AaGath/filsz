@@ -36,7 +36,7 @@ async def batch(client: Client, message: Message):
     string = f"get-{f_msg_id * abs(client.db_channel.id)}-{s_msg_id * abs(client.db_channel.id)}"
     base64_string = await encode(string)
     link = f"https://t.me/{client.username}?start={base64_string}"
-    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Our Group 🎈", url=f'https://t.me/+T4yw4xMsdd83ODM1')]])
+    reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("Share PrimeFlix ✨", url=f'https://t.me/share/url?url=t.me/PrimeFlix_Movies1')]])
     await second_message.reply_text(f"<b>Here is your link</b>\n\n{link}", quote=True, reply_markup=reply_markup)
 
 
